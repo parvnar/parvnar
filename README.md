@@ -27,4 +27,5 @@ Building a portfolio of business analytics and product projects.
 ## Connect
 
 LinkedIn: https://www.linkedin.com/in/parvnar/
+
 Portfolio: Coming Soon
