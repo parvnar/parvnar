@@ -1,16 +1,30 @@
-## Hi there 👋
+# Hi, I'm Parv 👋
 
-<!--
-**parvnar/parvnar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
 
-Here are some ideas to get you started:
+- MBA Candidate at IIM Rohtak (2026–28)
+- Interested in Business Analytics, Product Management, Strategy, and BFSI
+- Building practical business projects using Excel, SQL, Power BI, and Python
+- Passionate about solving real business problems through data and structured thinking
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## Currently Learning
+
+- Advanced Excel
+- SQL
+- Power BI
+- Python (Upcoming)
+
+---
+
+## Current Focus
+
+Building a portfolio of business analytics and product projects.
+
+---
+
+## Connect
+
+LinkedIn: https://www.linkedin.com/in/parvnar/
+Portfolio: Coming Soon
