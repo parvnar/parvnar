@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Parv Nar: MBA Candidate at IIM Rohtak. Business Analytics, Product, Strategy." width="100%"/>
-
-<img src="./assets/typing.svg" alt="Business Analytics, Product Thinking, Strategy, BFSI" width="560"/>
+<img src="./assets/banner.svg" alt="Parv Nar. Messy questions, clear decisions. MBA candidate at IIM Rohtak working across business analytics, product, strategy and BFSI." width="100%"/>
 
 <br/>
 
-[![IIM Rohtak](https://img.shields.io/badge/IIM_Rohtak-MBA_2026--28-1b2a52?style=for-the-badge)](https://www.linkedin.com/in/parvnar/)
-[![Focus](https://img.shields.io/badge/Focus-Analytics_·_Product_·_Strategy-5eead4?style=for-the-badge&labelColor=0b1220)](#-featured-work)
-[![BFSI](https://img.shields.io/badge/Interest-BFSI-818cf8?style=for-the-badge&labelColor=0b1220)](#-about)
+[![IIM Rohtak](https://img.shields.io/badge/IIM_Rohtak-MBA_2026--28-FF6B35?style=for-the-badge&labelColor=0A0C10)](https://www.linkedin.com/in/parvnar/)
+[![Focus](https://img.shields.io/badge/Focus-Analytics_·_Product_·_Strategy-38D9C2?style=for-the-badge&labelColor=0A0C10)](#-featured-work)
+[![BFSI](https://img.shields.io/badge/Interest-BFSI-FFC15A?style=for-the-badge&labelColor=0A0C10)](#-about)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-parvnar-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/parvnar/)
 [![X](https://img.shields.io/badge/X-@paarvnar-000000?style=flat-square&logo=x&logoColor=white)](https://x.com/paarvnar)
