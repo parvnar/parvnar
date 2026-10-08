@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 52" width="640" height="52" role="img" aria-labelledby="t">
+  <title id="t">Business Analytics. Product Thinking. Strategy. BFSI.</title>
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .p { font: 600 20px 'Inter','SF Pro Display','Segoe UI',Roboto,Helvetica,Arial,sans-serif; fill: #e0e7ff; text-anchor: middle; opacity: 0; }
+    .p0 { opacity: 1; }                       /* static fallback shows the first phrase */
+    .cycle { animation: show 12s ease-in-out infinite both; }
+    .d1 { animation-delay: 0s } .d2 { animation-delay: 3s } .d3 { animation-delay: 6s } .d4 { animation-delay: 9s }
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes show  { 0% { opacity: 0; transform: translateY(10px); } 4%, 21% { opacity: 1; transform: translateY(0); }
+                       25%, 100% { opacity: 0; transform: translateY(-10px); } }
+    @keyframes blink { 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+  <rect x="1" y="1" width="638" height="50" rx="25" fill="#0b1220" stroke="url(#a)" stroke-width="1.5"/>
+  <g transform="translate(320 33)">
+    <text class="p p0 cycle d1">Business Analytics</text>
+    <text class="p cycle d2">Product Thinking</text>
+    <text class="p cycle d3">Strategy &amp; Structured Problem-Solving</text>
+    <text class="p cycle d4">BFSI</text>
+  </g>
+</svg>

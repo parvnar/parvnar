@@ -2,6 +2,8 @@
 
 <img src="./assets/banner.svg" alt="Parv Nar: MBA Candidate at IIM Rohtak. Business Analytics, Product, Strategy." width="100%"/>
 
+<img src="./assets/typing.svg" alt="Business Analytics, Product Thinking, Strategy, BFSI" width="560"/>
+
 <br/>
 
 [![IIM Rohtak](https://img.shields.io/badge/IIM_Rohtak-MBA_2026--28-1b2a52?style=for-the-badge)](https://www.linkedin.com/in/parvnar/)
@@ -13,7 +15,7 @@
 
 </div>
 
----
+<img src="./assets/divider.svg" alt="" width="100%" height="6"/>
 
 ## 👋 About
 
@@ -21,7 +23,7 @@ I'm an MBA candidate at **IIM Rohtak (2026–28)** who likes problems where a cl
 
 On GitHub I build small, practical tools and business projects. The goal is work that solves a real problem for real users, explained so that anyone can follow it.
 
----
+<img src="./assets/divider.svg" alt="" width="100%" height="6"/>
 
 ## 🚀 Featured work
 
@@ -52,7 +54,7 @@ On GitHub I build small, practical tools and business projects. The goal is work
 </tr>
 </table>
 
----
+<img src="./assets/divider.svg" alt="" width="100%" height="6"/>
 
 ## 🧰 Toolkit
 
@@ -62,7 +64,7 @@ On GitHub I build small, practical tools and business projects. The goal is work
 | **Programming** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) ![Python](https://img.shields.io/badge/Python-learning-3776AB?style=flat-square&logo=python&logoColor=white) |
 | **Automation** | ![Apps Script](https://img.shields.io/badge/Google_Apps_Script-4285F4?style=flat-square&logo=google&logoColor=white) |
 
----
+<img src="./assets/divider.svg" alt="" width="100%" height="6"/>
 
 ## 🎯 Currently building
 
@@ -71,7 +73,7 @@ On GitHub I build small, practical tools and business projects. The goal is work
 
 > Portfolio site: *coming soon*
 
----
+<img src="./assets/divider.svg" alt="" width="100%" height="6"/>
 
 ## 🤝 Let's connect
 

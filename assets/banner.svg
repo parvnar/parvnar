@@ -20,28 +20,66 @@
     </pattern>
   </defs>
 
+  <style>
+    /* Static fallback = finished banner. Animations only animate *toward* that state. */
+    .bar   { transform-box: fill-box; transform-origin: 50% 100%; animation: grow 0.9s cubic-bezier(.2,.8,.2,1) both; }
+    .b1 { animation-delay: .15s } .b2 { animation-delay: .27s } .b3 { animation-delay: .39s }
+    .b4 { animation-delay: .51s } .b5 { animation-delay: .63s } .b6 { animation-delay: .75s }
+    .trend { stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw 1.4s ease-out 1s both; }
+    .dot   { animation: pop .5s cubic-bezier(.2,1.6,.4,1) 2.3s both; transform-box: fill-box; transform-origin: center; }
+    .ring  { fill: none; stroke: #5eead4; stroke-width: 2; transform-box: fill-box; transform-origin: center;
+             animation: ping 2.4s ease-out 2.6s infinite; opacity: 0; }
+    .rise  { animation: rise .8s cubic-bezier(.2,.8,.2,1) both; }
+    .r1 { animation-delay: .10s } .r2 { animation-delay: .25s } .r3 { animation-delay: .45s }
+    .r4 { animation-delay: .65s } .r5 { animation-delay: .80s }
+    .under { transform-box: fill-box; transform-origin: 0 50%; animation: wipe .8s cubic-bezier(.2,.8,.2,1) .7s both; }
+    .glow  { animation: breathe 7s ease-in-out infinite; }
+    .sweep { animation: sweep 6s ease-in-out 3s infinite; opacity: 0; }
+
+    @keyframes grow    { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes draw    { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes pop     { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    @keyframes ping    { 0% { transform: scale(1); opacity: .7; } 100% { transform: scale(4.5); opacity: 0; } }
+    @keyframes rise    { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes wipe    { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes breathe { 0%,100% { opacity: .75; } 50% { opacity: 1; } }
+    @keyframes sweep   { 0% { opacity: 0; transform: translateX(-260px); } 15% { opacity: .5; } 60% { opacity: .5; } 100% { opacity: 0; transform: translateX(1500px); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+      .ring { display: none; }
+    }
+  </style>
+
   <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
   <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
-  <rect width="1200" height="320" rx="18" fill="url(#glow)"/>
+  <rect class="glow" width="1200" height="320" rx="18" fill="url(#glow)"/>
 
-  <!-- abstract bar + trend motif -->
-  <g transform="translate(790 70)" opacity="0.95">
-    <rect x="0"   y="130" width="34" height="60"  rx="6" fill="#ffffff" fill-opacity="0.10"/>
-    <rect x="52"  y="100" width="34" height="90"  rx="6" fill="#ffffff" fill-opacity="0.14"/>
-    <rect x="104" y="70"  width="34" height="120" rx="6" fill="#ffffff" fill-opacity="0.18"/>
-    <rect x="156" y="95"  width="34" height="95"  rx="6" fill="#ffffff" fill-opacity="0.22"/>
-    <rect x="208" y="40"  width="34" height="150" rx="6" fill="url(#accent)" fill-opacity="0.85"/>
-    <rect x="260" y="10"  width="34" height="180" rx="6" fill="url(#accent)"/>
-    <polyline points="17,118 69,88 121,58 173,84 225,30 277,2" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="277" cy="2" r="6" fill="#ffffff"/>
+  <!-- soft light sweep across the card -->
+  <g clip-path="inset(0 round 18px)">
+    <rect class="sweep" x="-200" y="-40" width="140" height="400" fill="#ffffff" fill-opacity="0.06" transform="skewX(-18)"/>
+  </g>
+
+  <!-- bar + trend motif -->
+  <g transform="translate(790 70)">
+    <rect class="bar b1" x="0"   y="130" width="34" height="60"  rx="6" fill="#ffffff" fill-opacity="0.10"/>
+    <rect class="bar b2" x="52"  y="100" width="34" height="90"  rx="6" fill="#ffffff" fill-opacity="0.14"/>
+    <rect class="bar b3" x="104" y="70"  width="34" height="120" rx="6" fill="#ffffff" fill-opacity="0.18"/>
+    <rect class="bar b4" x="156" y="95"  width="34" height="95"  rx="6" fill="#ffffff" fill-opacity="0.22"/>
+    <rect class="bar b5" x="208" y="40"  width="34" height="150" rx="6" fill="url(#accent)" fill-opacity="0.85"/>
+    <rect class="bar b6" x="260" y="10"  width="34" height="180" rx="6" fill="url(#accent)"/>
+    <path class="trend" pathLength="1" d="M17 118 L69 88 L121 58 L173 84 L225 30 L277 2"
+          fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="ring" cx="277" cy="2" r="6"/>
+    <circle class="dot"  cx="277" cy="2" r="6" fill="#ffffff"/>
   </g>
 
   <!-- text -->
   <g font-family="'Inter','SF Pro Display','Segoe UI',Roboto,Helvetica,Arial,sans-serif">
-    <text x="64" y="92" font-size="15" font-weight="600" letter-spacing="4" fill="#5eead4">MBA CANDIDATE · IIM ROHTAK · 2026–28</text>
-    <text x="62" y="170" font-size="76" font-weight="800" letter-spacing="-2" fill="#ffffff">Parv Nar</text>
-    <rect x="64" y="192" width="96" height="5" rx="2.5" fill="url(#accent)"/>
-    <text x="64" y="240" font-size="24" font-weight="500" fill="#c7d2fe">Business Analytics  ·  Product  ·  Strategy</text>
-    <text x="64" y="274" font-size="16" fill="#94a3b8">Turning messy business questions into clear, data-backed decisions.</text>
+    <text class="rise r1" x="64" y="92" font-size="15" font-weight="600" letter-spacing="4" fill="#5eead4">MBA CANDIDATE · IIM ROHTAK · 2026–28</text>
+    <text class="rise r2" x="62" y="170" font-size="76" font-weight="800" letter-spacing="-2" fill="#ffffff">Parv Nar</text>
+    <rect class="under" x="64" y="192" width="96" height="5" rx="2.5" fill="url(#accent)"/>
+    <text class="rise r3" x="64" y="240" font-size="24" font-weight="500" fill="#c7d2fe">Business Analytics  ·  Product  ·  Strategy</text>
+    <text class="rise r4" x="64" y="274" font-size="16" fill="#94a3b8">Turning messy business questions into clear, data-backed decisions.</text>
   </g>
 </svg>
