@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Parv Nar</title>
+  <desc id="d">MBA Candidate at IIM Rohtak. Business Analytics, Product, Strategy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#101a33"/>
+      <stop offset="1" stop-color="#1b2a52"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#glow)"/>
+
+  <!-- abstract bar + trend motif -->
+  <g transform="translate(790 70)" opacity="0.95">
+    <rect x="0"   y="130" width="34" height="60"  rx="6" fill="#ffffff" fill-opacity="0.10"/>
+    <rect x="52"  y="100" width="34" height="90"  rx="6" fill="#ffffff" fill-opacity="0.14"/>
+    <rect x="104" y="70"  width="34" height="120" rx="6" fill="#ffffff" fill-opacity="0.18"/>
+    <rect x="156" y="95"  width="34" height="95"  rx="6" fill="#ffffff" fill-opacity="0.22"/>
+    <rect x="208" y="40"  width="34" height="150" rx="6" fill="url(#accent)" fill-opacity="0.85"/>
+    <rect x="260" y="10"  width="34" height="180" rx="6" fill="url(#accent)"/>
+    <polyline points="17,118 69,88 121,58 173,84 225,30 277,2" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="277" cy="2" r="6" fill="#ffffff"/>
+  </g>
+
+  <!-- text -->
+  <g font-family="'Inter','SF Pro Display','Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+    <text x="64" y="92" font-size="15" font-weight="600" letter-spacing="4" fill="#5eead4">MBA CANDIDATE · IIM ROHTAK · 2026–28</text>
+    <text x="62" y="170" font-size="76" font-weight="800" letter-spacing="-2" fill="#ffffff">Parv Nar</text>
+    <rect x="64" y="192" width="96" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="64" y="240" font-size="24" font-weight="500" fill="#c7d2fe">Business Analytics  ·  Product  ·  Strategy</text>
+    <text x="64" y="274" font-size="16" fill="#94a3b8">Turning messy business questions into clear, data-backed decisions.</text>
+  </g>
+</svg>
